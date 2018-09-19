@@ -11,7 +11,6 @@ public class Initials {
 		System.out.println("        T          R   R     M         M");
 		System.out.println("        T          R    R    M         M");
 		System.out.println("        T          R     R   M         M");
-
 	}
 
 }
