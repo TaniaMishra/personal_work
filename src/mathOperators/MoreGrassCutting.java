@@ -27,7 +27,7 @@ public class MoreGrassCutting {
 		miles = (length / deckWidth) * width; 		// one pass times the rest of the passes
 		miles = miles * 5280;						// from feet to miles
 		miles = miles * speed;
-		money = (areaLawn/100.0) * 1.25;
+		money = (area/100.0) * 1.25;				//DOESN'T WORK
 		
 		System.out.println("Amount Owed: $" + money);
 
