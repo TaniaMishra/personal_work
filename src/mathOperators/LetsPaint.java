@@ -28,6 +28,6 @@ public class LetsPaint {
 		System.out.println("Width: " + width);
 		System.out.println("Height: " + HEIGHT);
 		System.out.println("Area of Wall Space to be Painted: " + area);
-		System.out.println("Number of Gallons Needed: " + gallons);
+		System.out.println("Number of Gallons Needed: " + Math.ceil(gallons));
 	}
 }
