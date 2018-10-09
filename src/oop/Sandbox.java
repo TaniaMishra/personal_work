@@ -13,7 +13,7 @@ public class Sandbox {
 		Double length = input.nextDouble();
 		System.out.println("What is the width of the sandbox (ft.)?");
 		Double width = input.nextDouble();
-System.out.println("What is the depth of the sandbox (ft.)?");
+		System.out.println("What is the depth of the sandbox (ft.)?");
 		Double depth = input.nextDouble();
 		System.out.println("How many cubic feet of sand can you transport in an hour?");
 		Double speed = input.nextDouble();
