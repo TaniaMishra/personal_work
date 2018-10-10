@@ -3,10 +3,16 @@ package oop;
 public class Circle {
 	private double radius;
 	
+	//Default constructor
 	public Circle() {
 		radius = 3.0;
 	}
+	//Alternate constructor
+	public Circle(double rad) {
+		radius = rad;
+	}
 	
+	//Accessor Methods
 	public double returnRadius() {
 		return radius;
 	}
@@ -19,6 +25,7 @@ public class Circle {
 		return area;
 	}
 	
+	//Mutator Method
 	public void changeRadius(double newRadius) {
 		radius = newRadius;
 	}
