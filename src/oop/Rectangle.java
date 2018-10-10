@@ -4,11 +4,18 @@ public class Rectangle {
 	private double length;
 	private double width;
 	
+	//default
 	public Rectangle() {
 		length = 5;
 		width = 3;
 	}
+	//alternate
+	public Rectangle(double newL, double newW) {
+		length = newL;
+		width = newW;
+	}
 	
+	//accessors
 	public double returnLength() {
 		return length;
 	}
@@ -24,6 +31,7 @@ public class Rectangle {
 		return area;
 	}
 	
+	//mutators
 	public void changeLength(double newLength) {
 		length = newLength;
 	}
