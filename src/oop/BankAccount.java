@@ -43,8 +43,8 @@ public class BankAccount {
 	public void withdraw(double draw) {
 		balance -= draw;
 	}
-	public void interest(double interest) {
-		interest = interest * balance;
+	public void addInterest() {
+		double interest = intRate * balance;
 		balance = balance + interest;
 	}
 	public void financeCharge(double charge) {
