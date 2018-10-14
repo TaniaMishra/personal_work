@@ -45,7 +45,7 @@ public class CarNew {
 	}
 	
 	public void fillTank(int numGal) {
-		fuel = tankCap - numGal;
+		fuel += numGal;
 	}
 	public void driveCar(int milesDriven) {
 		double galUsed = milesDriven/mpg;
