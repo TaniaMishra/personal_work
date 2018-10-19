@@ -11,6 +11,8 @@ public class PetsGarage {
 		double cars = input.nextDouble();
 		
 		System.out.println(pets >= 5 && cars > 3);
+		
+		input.close();
 	}
 
 }

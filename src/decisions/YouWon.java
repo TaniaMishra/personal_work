@@ -16,6 +16,8 @@ public class YouWon {
 		else {
 			System.out.println("You won a bad prize. :(");
 		}
+		
+		input.close();
 	}
 
 }

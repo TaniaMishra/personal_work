@@ -22,6 +22,7 @@ public class Largest {
 		else {
 			System.out.println("The largest integer is: " + three);
 		}
+		input.close();
 	}
 
 }

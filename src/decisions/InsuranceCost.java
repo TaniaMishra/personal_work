@@ -28,6 +28,9 @@ public class InsuranceCost {
 		else {
 			cost -= 40;
 		}
+		
+		System.out.println("Total insurance cost: " + cost);
+		input.close();
 
 	}
 }

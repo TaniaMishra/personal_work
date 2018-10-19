@@ -13,5 +13,6 @@ public class HeightShoe {
 		System.out.println("Is your height less than 62 in and your shoe size greater than 9?");
 		System.out.println(height < 62 && shoe > 9);
 
+		input.close();
 	}
 }
