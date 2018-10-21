@@ -7,19 +7,36 @@ public class TestScores {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.println("What is the first test score?");
-		double firstTest = input.nextDouble();
+		double first = input.nextDouble();
 		System.out.println("What is the second test score?");
-		double secondTest = input.nextDouble();
+		double second = input.nextDouble();
+		System.out.println("What is the third test score?");
+		double third = input.nextDouble();
 		
-		if (firstTest > secondTest) {
-			System.out.println("Great Job! You entered the scores in the right order!");
-			System.out.println("Difference of test scores: " + (firstTest-secondTest));
+		double average = (first + second + third) / 3;
+		System.out.println("Your average grade is: " + average + "%");
+		
+		if (average >= 92.5) {
+			System.out.println("Grade Letter: A");
 		}
 		else {
-			System.out.println("Bad Job. You entered the scores in the wrong order.");
+			if (average >= 84.5) {
+				System.out.println("Grade Letter: B");
+			}
+			else {
+				if (average >= 77.5) {
+					System.out.println("Grade Letter: C");
+				}
+				else {
+					if (average >= 69.5) {
+						System.out.println("Grade Letter: D");
+					}
+					else {
+						System.out.println("Grade Letter: F");
+					}
+				}
+			}
 		}
-		
-		System.out.println("Have a nice day!");
 		
 		input.close();
 	}
