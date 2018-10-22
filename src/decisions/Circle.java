@@ -21,11 +21,11 @@ public class Circle {
 		return radius;
 	}
 	public double circumference() {
-		double circumference = (radius * 2) * Math.PI;
+		double circumference = 3.14*(radius * 2);
 		return circumference;
 	}
 	public double area() {
-		double area = Math.PI * radius * radius;
+		double area = 3.14 * radius * radius;
 		return area;
 	}
 	
