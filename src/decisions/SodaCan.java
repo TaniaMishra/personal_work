@@ -57,11 +57,11 @@ public class SodaCan {
 	}
 	
 	public double surfaceArea() {
-		double surfaceArea = (2 * Math.PI * radius * height) + (2 * Math.PI * radius * radius);
+		double surfaceArea = (2 * 3.14 * radius * height) + (2 * 3.14 * radius * radius);
 		return surfaceArea;
 	}
 	public double volume() {
-		double volume = Math.PI * radius * radius * height;
+		double volume = 3.14 * radius * radius * height;
 		return volume;
 	}
 	public double cost() {

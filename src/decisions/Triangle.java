@@ -1,5 +1,7 @@
 package decisions;
 
+import java.lang.Math;
+
 public class Triangle {
 	private double base;
 	private double height;

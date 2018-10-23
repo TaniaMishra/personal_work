@@ -18,7 +18,7 @@ public class CuttingGrass {
 		if (backYard == true) {
 			System.out.println("What is the radius of the front yard (meters)");
 			double radius = input.nextDouble();
-			double backArea = Math.PI * radius * radius;
+			double backArea = 3.14 * radius * radius;
 			double backPay = backArea/75;
 			backPay = backPay * 1.5;
 			pay += backPay;
