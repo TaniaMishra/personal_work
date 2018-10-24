@@ -13,7 +13,7 @@ public class ClassActivities {
 			count ++;							//1. get
 		}
 		
-		//#2 - possible multiples of 2 from 1-100,000 using a while loop
+		//#2 - possible multiples of 2 from 1-100,000 (using 10 for testing) using a while loop
 		count = 2;
 		while(count <= 10) {
 			System.out.println(count);
