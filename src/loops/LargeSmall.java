@@ -20,6 +20,9 @@ public class LargeSmall {
 			System.out.print("Test Score (9999 to quit): ");
 			score = input.nextDouble();
 		}
+		System.out.println("Biggest Score: " + big);
+		System.out.println("Smallest Score: " + small);
+
 		input.close();
 	}
 }
