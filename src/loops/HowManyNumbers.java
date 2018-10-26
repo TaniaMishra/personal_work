@@ -7,13 +7,15 @@ public class HowManyNumbers {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter a number: ");
 		int number = input.nextInt();
-		int sum = 0;
+		int sum = number;
 		do {
-			sum += number;
 			System.out.println("Sum: " + sum);
-			
+			System.out.println("Enter a number: ");
+			number = input.nextInt();
+			sum += number;
 		}
-		while ()
-
+		while (sum < 2018);
+		
+		input.close();
 	}
 }
