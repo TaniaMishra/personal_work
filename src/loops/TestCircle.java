@@ -43,11 +43,8 @@ public class TestCircle {
 			else if (circumference2 == circumference3 && circumference2 > circumference1) {
 				System.out.println("The biggest circles are the second and third circle!");
 			}
-			else if (circumference3 == circumference1 && circumference3 > circumference2) {
-				System.out.println("The biggest circles are the first and third circle!");
-			}
 			else {
-				System.out.println("The biggest circle is the third circle!");
+				System.out.println("The biggest circles are the first and third circle!");
 			}
 			
 			System.out.println("Would you like to test another three circles? (true or false)");
