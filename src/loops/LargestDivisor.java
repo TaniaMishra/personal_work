@@ -18,6 +18,7 @@ public class LargestDivisor {
 			}
 		}
 		
+		System.out.println("Biggest Divisor (not the number itself): " + biggest);
 		input.close();
 	}
 }
