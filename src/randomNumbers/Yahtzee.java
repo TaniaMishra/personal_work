@@ -29,6 +29,7 @@ public class Yahtzee {
 				yahtzee = false;
 				tries++;
 			}
+			count = 0;
 		}
 	}
 }
