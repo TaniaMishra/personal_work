@@ -10,7 +10,7 @@ public class NumberOfLetters {
 		int vowels = 0;
 		int consonants = 0;
 		int punctuation = 0;
-		int numbers = 0;
+		int other = 0;
 		int length = sentence.length();
 		
 		for (int i = 0; i < length; i++) {
@@ -24,8 +24,8 @@ public class NumberOfLetters {
 			else if (character > 97 && character <= 122) {
 				consonants++;
 			}
-			else if (character >= 48 && character <= 57){
-				numbers++;
+			else if ((character >= 48 && character <= 57) || character == ' '){
+				other++;
 			}
 			else {
 				punctuation++;
