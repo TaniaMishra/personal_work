@@ -12,7 +12,7 @@ public class RollADie {
 		int numRolls = 10000;
 		int[] rolls = new int[numRolls];
 
-		for (int i = 0; i < numRolls; i++) {
+		for (int i = 0; i < rolls.length; i++) {
 			rolls[i] = min + rand.nextInt(max - min + 1);
 		}
 
