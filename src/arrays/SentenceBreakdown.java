@@ -11,6 +11,7 @@ public class SentenceBreakdown {
 		
 		int[] alphabet = new int[26];
 		
+		
 		for (int i = 0; i < sentence.length(); i++) {
 			char character = sentence.charAt(i);
 			int element = 0;	//starts at a/A
