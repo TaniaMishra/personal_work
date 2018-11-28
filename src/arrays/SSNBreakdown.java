@@ -13,6 +13,16 @@ public class SSNBreakdown {
 		dash = ending.indexOf('-');
 		String middle = ending.substring(0, dash);
 		
-
+		int firstChar = middle.charAt(0);
+		char lastChar = middle.charAt(1);
+		
+		for (int i = 48; i < 58; i++) {
+			if (firstChar == i) {
+				
+			}
+		}
+		
+		System.out.println(firstChar);
+		
 	}
 }
