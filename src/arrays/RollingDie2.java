@@ -31,6 +31,8 @@ public class RollingDie2 {
 			System.out.println("");
 		}
 		
+		System.out.println("");
+		
 		for (int c = 0; c < rollsEach; c++) {
 			for (int r = 0; r < students; r++) {
 				System.out.print(rolls[r][c] + "  ");
