@@ -39,6 +39,7 @@ public class StudentTests {
 			System.out.println("Test " + (c+1) + " Average: " + average);
 		}
 		
+		System.out.println("Average of all the tests: " + allAverage);
 		
 		input.close();
 	}
