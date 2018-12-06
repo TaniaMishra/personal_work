@@ -43,6 +43,13 @@ public class ArrayListActivities {
 			friends.add(0, new Friend(name, age));
 			input.nextLine();
 		}
+		
+		for (int i = 0; i < friends.size(); i++) {
+			Friend person = friends.get(i);
+			System.out.println("Age: " + person.getAge());
+		}
+		
+		
 		input.close();
 	}
 }
