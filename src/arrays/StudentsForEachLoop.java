@@ -13,6 +13,7 @@ public class StudentsForEachLoop {
 		ArrayList<Student> students = new ArrayList<Student>();
 		
 		for (int i = 0; i < number; i++) {
+			input.nextLine();
 			System.out.println("Name:");
 			String name = input.nextLine();
 			System.out.println("Score:");
@@ -34,8 +35,8 @@ public class StudentsForEachLoop {
 		int score = input.nextInt();
 		
 		for (Student x : students) {
-			if (x.returnScore() == score) {
-				
+			if (x.returnScore() > score) {
+				System.out.println("Name: " + x.returnName() + "  Score: " + x.returnScore());
 			}
 		}
 
