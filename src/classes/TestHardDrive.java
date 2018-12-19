@@ -19,9 +19,7 @@ public class TestHardDrive {
 		hp.addFile(7);
 		System.out.println("Is full? " + hp.isFull());
 		hp.deleteFile(2);
-		System.out.println("Is full? " + hp.isFull());
-
-		
+		System.out.println("Is full? " + hp.isFull());	
 
 	}
 }
