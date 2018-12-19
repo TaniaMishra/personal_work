@@ -22,6 +22,18 @@ public class Employee {
 		}
 	}
 	
+	public Employee(String n, double r) {
+		name = n;
+		rate = r;
+		employeeNum = employeeClassNum;
+		employeeClassNum++;
+		Random rand = new Random();
+		for (int i = 0; i < 52; i++) {
+			int num = rand.nextInt(41);
+			hoursWorked.add((double)num);
+		}
+	}
+	
 	public void modifyRate(double add) {
 		rate += add;
 	}
@@ -32,19 +44,16 @@ public class Employee {
 		return pay;
 	}
 	
-	public String empToString() {
-		Employee emp = new Employee();
-		return emp.toString();
+	public String toString() {
+		return ("Employee: name - " + name + ", rate - " + rate + ", hoursWorked - " + hoursWorked + ", employeeClassNum - " + employeeClassNum + ", employeeNum - " + employeeNum);
 	}
 	
 	public Employee clone() {
-		Employee emp = new Employee();
-		return emp;
+		return new Employee(name, rate);
 	}
 	
-	public boolean equalsTo(Employee user) {
-		Employee emp = new Employee();
-		if (emp.equals(user)) {
+	public boolean equal(Employee user) {
+		if (this.toString().equals(user.toString())) {
 			return true;
 		}
 		else {

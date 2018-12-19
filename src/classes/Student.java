@@ -11,6 +11,12 @@ public class Student {
 		name = "Bob Smith";
 	}
 	
+	public Student(String n, ArrayList<Integer> t, int num) {
+		name = n;
+		tests = t;
+		howMany = num;
+	}
+	
 	public void addScore(String score) {
 		int intScore = Integer.parseInt(score);
 		tests.add(intScore);
@@ -35,19 +41,16 @@ public class Student {
 		return lowest;
 	}
 	
-	public String studentToString() {
-		Student student = new Student();
-		return student.toString();
+	public String toString() {
+		return ("Student: name - " + name + ", tests - " + tests + ", howMany - " + howMany);
 	}
 	
-	public Student cloneStudent() {
-		Student student = new Student();
-		return student;
+	public Student clone() {
+		return new Student(name, tests, howMany);
 	}
 	
-	public boolean equalsTo(Student user) {
-		Student student = new Student();
-		if (student.equals(user)) {
+	public boolean equals(Student user) {
+		if (this.toString().equals(user.toString())) {
 			return true;
 		}
 		else {

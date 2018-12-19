@@ -28,16 +28,16 @@ public class Book {
 		return pages;
 	}
 	
-	public String titleToString() {
-		return title.toString();
+	public String toString() {
+		return "Book Class: title - " + title + " & pages - " + pages;
 	}
 	
-	public String cloneTitle() {
-		return "CAN'T GET THIS TO WORK!"; //HardDrive.clone();
+	public Book clone() {
+		return new Book(title, pages);
 	}
 	
-	public boolean titleEquals(String xTitle) {
-		if (title.equals(xTitle)) {
+	public boolean equals(Book book) {
+		if (this.toString().equals(book.toString())) {
 			return true;
 		}
 		else {

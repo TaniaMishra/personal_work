@@ -69,16 +69,13 @@ public class Car {
 		odometer += milesDriven;
 	}
 	public Car clone() {
-		Car car = new Car();
-		return car;
+		return new Car(mpg, tankCap, fuel, odometer);
 	}
-	public String carToString() {
-		Car car = new Car();
-		return car.toString();
+	public String toString() {
+		return ("Car object: mpg - " + mpg + ", tankCap - " + tankCap + ", fuel - " + fuel + ", odometer - " + odometer);
 	}
-	public boolean equals(Car compare) {
-		Car car = new Car();
-		if (car.equals(compare)) {
+	public boolean equals(Car user) {
+		if (this.toString().equals(user.toString())) {
 			return true;
 		}
 		else {
