@@ -8,7 +8,6 @@ public class TestStudent {
 		bob.addScore("94");
 		bob.addScore("96");
 		bob.addScore("98");
-		bob.addScore("100");
 		System.out.println("Lowest Score: " + bob.lowestScore());
 		System.out.println("Average: " + bob.averageScores());
 		System.out.println("State: " + bob.toString());

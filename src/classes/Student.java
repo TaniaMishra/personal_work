@@ -1,60 +1,61 @@
 package classes;
 
-import java.util.ArrayList;
-
 public class Student {
 	private String name;
-	private ArrayList<Integer> tests;
+	private int[] tests;
 	private int howMany;
 	
 	public Student() {
 		name = "Bob Smith";
+		tests = new int[5];
+		howMany = 0;
 	}
 	
-	public Student(String n, ArrayList<Integer> t, int num) {
+	public Student(String n, int[] t) {
 		name = n;
 		tests = t;
-		howMany = num;
+		howMany = 0;
+		for (int i = 0; i < tests.length; i++) {
+			if (tests[i] != 0) {
+				howMany++;
+			}
+		}
 	}
 	
 	public void addScore(String score) {
 		int intScore = Integer.parseInt(score);
-		tests.add(intScore);
+		tests[howMany] = intScore;
+		howMany++;
 	}
 	
 	public double averageScores() {
 		double average = 0;
-		for (int i = 0; i < tests.size(); i++) {
-			average += tests.get(i);
+		for (int i = 0; i < howMany; i++) {
+			average += tests[i];
 		}
-		average = average/tests.size();
+		average = average/howMany;
 		return average;
 	}
 	
 	public int lowestScore() {
 		int lowest = 10000000;
-		for (int i = 0; i < tests.size(); i++) {
-			if (tests.get(i) < lowest) {
-				lowest = tests.get(i);
+		for (int i = 0; i < howMany; i++) {
+			if (tests[i] < lowest) {
+				lowest = tests[i];
 			}
 		}
 		return lowest;
 	}
 	
 	public String toString() {
-		return ("Student: name - " + name + ", tests - " + tests + ", howMany - " + howMany);
+		return ("Student: name - " + name + ", tests - " + tests[0] + ", " + tests[1] + ", " + tests[2] + ", " + tests[3] + ", " + tests[4] + ", howMany - " + howMany);
 	}
 	
 	public Student clone() {
-		return new Student(name, tests, howMany);
+		return new Student(name, tests);
 	}
 	
 	public boolean equals(Student user) {
-		if (this.toString().equals(user.toString())) {
-			return true;
-		}
-		else {
-			return false;
-		}
+		return (this.toString().equals(user.toString()));
 	}
 }

@@ -1,12 +1,11 @@
 package classes;
 
-import java.util.ArrayList;
 import java.util.Random;
 
 public class Employee {
 	private String name;
 	private double rate;
-	private ArrayList<Double> hoursWorked;
+	private double[] hoursWorked;
 	private static int employeeClassNum = 0;
 	private int employeeNum;
 	
@@ -15,10 +14,11 @@ public class Employee {
 		rate = 10;
 		employeeNum = employeeClassNum;
 		employeeClassNum++;
+		hoursWorked = new double[52];
 		Random rand = new Random();
-		for (int i = 0; i < 52; i++) {
+		for (int i = 0; i < hoursWorked.length; i++) {
 			int num = rand.nextInt(41);
-			hoursWorked.add((double)num);
+			hoursWorked[i] = (double)num;
 		}
 	}
 	
@@ -28,9 +28,10 @@ public class Employee {
 		employeeNum = employeeClassNum;
 		employeeClassNum++;
 		Random rand = new Random();
-		for (int i = 0; i < 52; i++) {
+		hoursWorked = new double[52];
+		for (int i = 0; i < hoursWorked.length; i++) {
 			int num = rand.nextInt(41);
-			hoursWorked.add((double)num);
+			hoursWorked[i] = (double)num;
 		}
 	}
 	
@@ -39,13 +40,17 @@ public class Employee {
 	}
 	
 	public double calcPay(int week) {
-		double hours = hoursWorked.get(week);
+		double hours = hoursWorked[week-1];
 		double pay = hours * rate;
 		return pay;
 	}
 	
 	public String toString() {
-		return ("Employee: name - " + name + ", rate - " + rate + ", hoursWorked - " + hoursWorked + ", employeeClassNum - " + employeeClassNum + ", employeeNum - " + employeeNum);
+		String emp = ("Employee: name - " + name + ", rate - " + rate + ", employeeClassNum - " + employeeClassNum + ", employeeNum - " + employeeNum + ", hoursWorked - " + hoursWorked); //fix - APPEND STRING
+		//for (double x : hoursWorked) {
+		//	emp.append(hoursWorked[x]);
+		//}
+		return emp;
 	}
 	
 	public Employee clone() {
