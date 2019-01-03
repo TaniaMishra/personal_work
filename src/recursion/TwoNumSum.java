@@ -19,14 +19,16 @@ public class TwoNumSum {
 		int digits2 = 1;
 		int num2;
 		do {
-			System.out.println("Enter a number:");
+			digits = 1;
+			digits2 = 1;
+			System.out.println("Enter a first number:");
 			num1 = input.nextInt();
 			int test = num1/10;
 			while (test > 0) {
 				test = test/10;
 				digits++;
 			}
-			System.out.println("Enter a number:");
+			System.out.println("Enter a second number:");
 			num2 = input.nextInt();
 			int test2 = num2/10;
 			while (test2 > 0) {
