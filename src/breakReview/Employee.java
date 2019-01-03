@@ -25,7 +25,7 @@ public class Employee {
 	public String getName() {
 		return name;
 	}
-	public double calcPay(int week) {
+	public double calcPay() {
 		double pay = hours * rate;
 		return pay;
 	}
