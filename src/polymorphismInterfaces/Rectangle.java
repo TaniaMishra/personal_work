@@ -1,6 +1,6 @@
 package polymorphismInterfaces;
 
-public class Rectangle {
+public class Rectangle implements ClassActivities {
 	private double length;
 	private double width;
 
