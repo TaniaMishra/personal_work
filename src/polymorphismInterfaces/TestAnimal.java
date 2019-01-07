@@ -15,19 +15,20 @@ public class TestAnimal {
 			System.out.println(pets.get(i).toString());
 		}
 		
-		Dog dog1 = (Dog)pets.get(0);
-		Dog dog2 = (Dog)pets.get(1);
-		dog1.vet();
-		dog2.vet();
-		
-		Cat cat2 = (Cat)pets.get(3);
-		if (cat2.returnFriendly() == false) {
-			pets.remove(3);
+		for (int i = 0; i < pets.size(); i++) {
+			if (pets.get(i) instanceof Dog) {
+				Dog doggy = (Dog)pets.get(i);
+				doggy.vet();
+			}
 		}
-		else {
-			Cat cat1 = (Cat)pets.get(2);
-			if (cat1.returnFriendly() == false) {
-				pets.remove(2);
+		
+		for (int i = pets.size()- 1; i >= 0; i--) {
+			if (pets.get(i) instanceof Cat) {
+				Cat kitty = (Cat)pets.get(i);
+				if (kitty.returnFriendly() == false) {
+					pets.remove(i);
+					break;
+				}
 			}
 		}
 		
