@@ -1,6 +1,7 @@
 package polymorphismInterfaces;
 
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class TestPerson {
 	public static void main(String[] args) {
@@ -33,6 +34,22 @@ public class TestPerson {
 		System.out.println("Teacher Age: " + filterTeacher.getAge());
 		System.out.println("Student Name: " + filterStudent.getName());
 		System.out.println("Student Age: " + filterStudent.getAge());
+		
+		//In Class Activities
+		ArrayList<Person> people = new ArrayList<Person>();
+		people.add(new Student());
+		people.add(new Student());
+		people.add(new Student());
+		people.add(new Teacher());
+		people.add(new Teacher());
+
+		for (Person x : people) {
+			String name = x.getName();
+			int length = name.length();
+			if (length > 10) {
+				System.out.println(x.getAge());
+			}
+		}
 		
 		input.close();
 	}
