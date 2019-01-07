@@ -1,6 +1,6 @@
 package polymorphismInterfaces;
 
-public class Circle implements ClassActivities {
+public class Circle implements ClassActivities, Shape {
 	private double radius;
 
 	public Circle() {
