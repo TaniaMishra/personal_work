@@ -17,7 +17,7 @@ public class TestShapeArrayLists {
 		}
 		
 		double sum = 0;
-		double smallestP = 1000000;
+		double smallestP = shapes.get(0).perimeter();
 		for (Shape x : shapes) {
 			sum += x.area();
 			if (x.perimeter() < smallestP) {
