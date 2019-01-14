@@ -49,4 +49,14 @@ public class Quadrilateral {
 		double p = s1 + s2 + s3 + s4;
 		return p;
 	}
+	
+	public String toString() {
+		return ("Quadrilateral: side 1 - " + s1 + ", side 2  - " + s2 + ", side 3 - " + s3 + ", side 4 - " + s4);
+	}
+	public boolean equalsTo(Object user) {
+		return (this.toString().equals(user.toString()));
+	}
+	public Quadrilateral clone() {
+		return (new Quadrilateral(s1, s2, s3, s4));
+	}
 }

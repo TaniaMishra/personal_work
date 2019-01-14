@@ -30,4 +30,13 @@ public class Trapezoid extends Quadrilateral implements Geometry {
 		return a;
 	}
 
+	public String toString() {
+		return ("Trapezoid: height - " + height + " " + super.toString());
+	}
+	public boolean equals(Object user) {
+		return (this.toString().equals(user.toString()));
+	}
+	public Trapezoid clone() {
+		return (new Trapezoid(super.getSide1(), super.getSide2(), super.getSide3(), super.getSide4()));
+	}
 }

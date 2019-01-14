@@ -24,4 +24,14 @@ public class Parallelogram extends Quadrilateral {
 		double a = super.getSide4() * height;
 		return a;
 	}
+	
+	public String toString() {
+		return ("Parallelogram: height - " + height + " " + super.toString());
+	}
+	public boolean equals(Object user) {
+		return (this.toString().equals(user.toString()));
+	}
+	public Parallelogram clone() {
+		return (new Parallelogram(super.getSide1(), super.getSide2(), height));
+	}
 }
