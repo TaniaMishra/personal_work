@@ -6,5 +6,9 @@ public class TestParallelogram {
 		
 		System.out.println("Perimeter: " + parallel.perimeter());
 		System.out.println("Area: " + parallel.area());
+		System.out.println(parallel.toString());
+		
+		Parallelogram cloned = parallel.clone();
+		System.out.println("Cloned == Original? " + parallel.equals(cloned));
 	}
 }

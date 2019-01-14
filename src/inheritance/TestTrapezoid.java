@@ -6,5 +6,10 @@ public class TestTrapezoid {
 		
 		System.out.println("Perimeter: " + trap.perimeter());
 		System.out.println("Area: " + trap.area());
+		System.out.println(trap.toString());
+		
+		Trapezoid cloned = trap.clone();
+		System.out.println("Cloned == Original? " + trap.equals(cloned));
+
 	}
 }

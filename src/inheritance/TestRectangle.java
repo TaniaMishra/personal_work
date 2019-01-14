@@ -6,6 +6,10 @@ public class TestRectangle {
 		
 		System.out.println("Perimeter: " + rec.perimeter());
 		System.out.println("Area: " + rec.area());
+		System.out.println(rec.toString());
 		
+		Rectangle cloned = rec.clone();
+		System.out.println("Cloned == Original? " + rec.equals(cloned));
+
 	}
 }

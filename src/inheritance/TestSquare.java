@@ -6,5 +6,10 @@ public class TestSquare {
 		
 		System.out.println("Perimeter: " + square.perimeter());
 		System.out.println("Area: " + square.area());
+		System.out.println(square.toString());
+		
+		Square cloned = square.clone();
+		System.out.println("Cloned == Original? " + square.equals(cloned));
+
 	}
 }
